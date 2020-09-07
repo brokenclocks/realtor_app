@@ -1,4 +1,22 @@
 #!/bin/bash
+echo
+echo
+echo
+echo
+echo
+echo
 echo "https://pythondjango-brokenclock.codeanyapp.com/"
+echo
+echo
+echo
+echo
+echo
+echo
 exec ./manage.py runserver 0.0.0.0:3000
+echo
+echo
+echo
+echo
+echo
+echo
 echo "https://pythondjango-brokenclock.codeanyapp.com/"
