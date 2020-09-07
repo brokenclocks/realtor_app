@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "https://pythondjango-brokenclock.codeanyapp.com/"
+exec ./manage.py runserver 0.0.0.0:3000
+echo "https://pythondjango-brokenclock.codeanyapp.com/"
