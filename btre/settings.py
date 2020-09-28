@@ -31,8 +31,10 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
-    'realtors.apps.RealtorsConfig',
+    'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
+    'realtors.apps.RealtorsConfig',
+    'django.contrib.humanize',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,7 +85,7 @@ DATABASES = {
         'PASSWORD': '4069',
         'HOST': 'localhost'
 
-        
+
     }
 }
 
@@ -129,6 +131,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'btre/static')]
 
 
-#media folder settings
+# media folder settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
