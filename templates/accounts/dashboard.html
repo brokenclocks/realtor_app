@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
-
+{% block title %}
+| Dashboard | {{ user.username }}
+{% endblock title %}
 {% block content %}
 <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
-          <h1 class="display-4">User Dashboard</h1>
+          <h1 class="display-4">({{ user.username }})User Dashboard</h1>
           <p class="lead">Manage your BT Real Estate account</p>
         </div>
       </div>
@@ -26,7 +28,9 @@
       </nav>
     </div>
   </section>
-
+ <!-- alerts-->
+ {% include 'partials/_alerts.html' %}
+ 
   <section id="dashboard" class="py-4">
     <div class="container">
       <div class="row">
